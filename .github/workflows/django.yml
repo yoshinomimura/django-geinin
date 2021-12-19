@@ -45,8 +45,3 @@ jobs:
         REDIRECT_DOMAINS: red.localhost:3000/
     - name: Test
       run: python manage.py test
-      env:
-        DB_HOST: 127.0.0.1
-        DB_PASSWORD: postgres
-        DB_USER: postgres
-        REDIRECT_DOMAINS: red.localhost:3000/
