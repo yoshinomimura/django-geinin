@@ -1,0 +1,5 @@
+<h2>{{comedian.name}}</h2>
+
+
+<a href="{% url 'comedians:result' comedian.id %}?result=pro">面白い</a>
+<a href="{% url 'comedians:result' comedian.id %}?result=con">普通・・・</a>

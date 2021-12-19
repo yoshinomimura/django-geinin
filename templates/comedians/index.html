@@ -1,0 +1,14 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/comedians/index.css' %}">
+
+<p class="hoge">芸名一覧（個人）</p>
+<ul>
+    {% for row in comedians %}
+    <a href="{% url 'comedians:detail' row.id %}">{{row.name}}</a>
+    {% endfor %}
+</ul>
+
+<p id="hoge"></p>
+
+<script src="{% static 'js/comedians/index.js' %}"></script>
