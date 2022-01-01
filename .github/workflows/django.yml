@@ -44,7 +44,7 @@ jobs:
         DB_USER: postgres
         REDIRECT_DOMAINS: red.localhost:3000/
     - name: Migrate & Test
-      run: python manage.py migrate
+      run: python -m django --version
       env:
         DB_HOST: 127.0.0.1
         DB_PASSWORD: postgres
