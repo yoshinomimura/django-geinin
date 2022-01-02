@@ -50,3 +50,8 @@ jobs:
         DB_PASSWORD: postgres
         DB_USER: postgres
         REDIRECT_DOMAINS: red.localhost:3000/
+    - name: Docker Test
+      run: |
+          docker-compose up -d
+          sleep 20s
+          docker-compose ps
